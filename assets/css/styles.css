@@ -416,3 +416,59 @@ a:hover {
         display: block;
     }
 }
+
+/* Fix: stacked buttons spacing */
+.btn-stack {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 920px) {
+    .btn-stack {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-stack .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile spacing tightening */
+@media (max-width: 920px) {
+    .hero {
+        padding: 22px 0 10px;
+    }
+
+    /* было 42/26 -> плотнее */
+    .section {
+        padding: 14px 0;
+    }
+
+    /* было 26/26 -> плотнее */
+
+    .hero__grid {
+        gap: 12px;
+    }
+
+    /* было 18 */
+    .grid2,
+    .grid3 {
+        gap: 12px;
+    }
+
+    /* было 14 */
+
+    .card__pad {
+        padding: 16px;
+    }
+
+    /* было 22 -> чуть компактнее */
+    .h1 {
+        margin: 8px 0 10px;
+    }
+
+    /* чуть меньше */
+}

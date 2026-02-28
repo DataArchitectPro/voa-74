@@ -472,3 +472,27 @@ a:hover {
 
     /* чуть меньше */
 }
+
+/* Fix: anchors hidden under sticky header */
+:root {
+    --header-offset: 86px;
+    /* примерная высота шапки */
+}
+
+@media (max-width: 920px) {
+    :root {
+        --header-offset: 72px;
+        /* на мобиле шапка ниже */
+    }
+}
+
+/* Любой элемент с id будет прокручиваться с отступом сверху */
+[id] {
+    scroll-margin-top: var(--header-offset);
+}
+
+/* Anchor offset for sticky header (works even when scroll-margin is ignored) */
+html,
+body {
+    scroll-padding-top: var(--header-offset);
+}

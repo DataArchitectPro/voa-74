@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Автошкола ВОА — Челябинск и область</title>
+    <meta name="description"
+        content="Обучение на категории A, A1, B, BE, C, CE. Челябинск и филиалы по области. Запись на обучение онлайн." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__row">
+            <a class="brand" href="index.html" aria-label="На главную">
+                <span class="brand__logo" aria-hidden="true"></span>
+                <span>Автошкола ВОА</span>
+            </a>
+
+            <nav class="nav" aria-label="Основное меню">
+                <a href="index.html" aria-current="page">Главная</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="svedeniya.html">Сведения</a>
+            </nav>
+
+            <div class="header__cta">
+                <a class="btn btn--ghost" href="tel:+73512148833">+7 (351) 214-88-33</a>
+                <a class="btn btn--primary" href="#lead">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="card">
+                    <div class="card__pad">
+                        <span class="badge">Челябинск · сеть филиалов по области</span>
+                        <h1 class="h1">Обучение в автошколе: от теории до экзамена</h1>
+                        <p class="lead">Категории: A, A1, B, BE, C, CE и переобучение с B на C. Учим по графику, который
+                            можно совместить с работой.</p>
+
+                        <div class="kv" aria-label="Ключевые параметры">
+                            <span class="badge">Цена в Челябинске: 50 000 ₽</span>
+                            <span class="badge">Срок обучения: ~3 месяца</span>
+                            <span class="badge">Очная форма + элементы дистанта</span>
+                        </div>
+
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+                            <a class="btn btn--primary" href="#lead">Оставить заявку</a>
+                            <a class="btn btn--ghost" href="prices.html">Смотреть цены</a>
+                        </div>
+
+                        <p class="small" style="margin-top:12px;">
+                            Главный филиал: г. Челябинск, ул. Болейко, 2А
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Категории обучения</h2>
+                        <ul class="list">
+                            <li><strong>A / A1</strong> — мотоциклы</li>
+                            <li><strong>B</strong> — легковые</li>
+                            <li><strong>BE</strong> — прицеп</li>
+                            <li><strong>C / CE</strong> — грузовые</li>
+                            <li><strong>B → C</strong> — переобучение</li>
+                        </ul>
+                        <div class="notice" style="margin-top:12px;">
+                            Для мессенджеров и email — поставим ссылки позже (пока плейсхолдеры).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid3">
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Современная теория</h2>
+                        <p class="p">Понятные занятия и материалы. Можно добавить онлайн-формат там, где это допустимо.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Практика с инструктором</h2>
+                        <p class="p">Практические занятия по расписанию. Подготовка к экзамену.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Филиалы по области</h2>
+                        <p class="p">Учебные классы и филиалы в Челябинской области — удобно выбрать место.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="lead">
+            <div class="container grid2">
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Оставить заявку</h2>
+                        <p class="p">Мы перезвоним, уточним категорию, расписание и ближайший набор.</p>
+
+                        <form class="form" data-lead-form>
+                            <div class="form__row">
+                                <input class="input" name="name" placeholder="Ваше имя" autocomplete="name" required />
+                                <input class="input" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel"
+                                    data-phone required />
+                            </div>
+                            <select class="input" name="category" required>
+                                <option value="" selected disabled>Выберите категорию</option>
+                                <option>A</option>
+                                <option>A1</option>
+                                <option>B</option>
+                                <option>BE</option>
+                                <option>C</option>
+                                <option>CE</option>
+                                <option>B→C</option>
+                            </select>
+                            <button class="btn btn--primary" type="submit">Отправить</button>
+                            <p class="small">Нажимая “Отправить”, вы соглашаетесь на обработку персональных данных.</p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__pad">
+                        <h2 class="h2">Контакты (главный филиал)</h2>
+                        <ul class="list">
+                            <li><strong>Адрес:</strong> г. Челябинск, ул. Болейко, д. 2А</li>
+                            <li><strong>Телефон:</strong> <a href="tel:+73512148833">+7 (351) 214-88-33</a></li>
+                            <li><strong>График:</strong> Пн–Пт 08:00–21:00 (секретарь 09:00–18:00, перерыв 13:00–14:00)
+                            </li>
+                            <li><strong>Мессенджеры:</strong> <a href="#">WhatsApp (placeholder)</a>, <a
+                                    href="#">Telegram (placeholder)</a></li>
+                            <li><strong>Email:</strong> <a href="#">email@placeholder.ru</a></li>
+                        </ul>
+
+                        <div style="margin-top:12px;">
+                            <a class="btn btn--ghost" href="contacts.html">Страница контактов</a>
+                            <a class="btn btn--ghost" href="svedeniya.html">Сведения (обязательный раздел)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__row">
+            <div>© <span id="y"></span> ЧОУ ДПО “Автошкола ВОА”</div>
+            <div><a href="svedeniya.html">Сведения об образовательной организации</a></div>
+        </div>
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+        <script src="assets/js/main.js"></script>
+    </footer>
+</body>
+
+</html>

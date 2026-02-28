@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Цены — Автошкола ВОА</title>
+    <meta name="description"
+        content="Стоимость обучения в автошколе ВОА: категории A, A1, B, BE, C, CE, переобучение B→C." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__row">
+            <a class="brand" href="index.html"><span class="brand__logo"></span><span>Автошкола ВОА</span></a>
+            <nav class="nav" aria-label="Основное меню">
+                <a href="index.html">Главная</a>
+                <a href="prices.html" aria-current="page">Цены</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="svedeniya.html">Сведения</a>
+            </nav>
+            <div class="header__cta">
+                <a class="btn btn--ghost" href="tel:+73512148833">+7 (351) 214-88-33</a>
+                <a class="btn btn--primary" href="index.html#lead">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card__pad">
+                    <h1 class="h1" style="margin-top:0;">Цены</h1>
+                    <p class="lead">Стоимость обучения в классах города Челябинска: <strong>50 000 ₽</strong> за весь
+                        курс.</p>
+                    <div class="notice">Для филиалов Челябинской области стоимость может отличаться — уточняется по
+                        телефону.</div>
+
+                    <h2 class="h2" style="margin-top:16px;">Направления</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Категория</th>
+                                <th>Описание</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>Мотоциклы</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                            <tr>
+                                <td>A1</td>
+                                <td>Мотоциклы (подкатегория)</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>Легковые</td>
+                                <td><strong>50 000 ₽</strong> (Челябинск)</td>
+                            </tr>
+                            <tr>
+                                <td>BE</td>
+                                <td>Прицеп</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Грузовые</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                            <tr>
+                                <td>CE</td>
+                                <td>Грузовые + прицеп</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                            <tr>
+                                <td>B → C</td>
+                                <td>Переобучение</td>
+                                <td>Уточняйте</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+                        <a class="btn btn--primary" href="index.html#lead">Оставить заявку</a>
+                        <a class="btn btn--ghost" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__row">
+            <div>© <span id="y"></span> ЧОУ ДПО “Автошкола ВОА”</div>
+            <div><a href="svedeniya.html">Сведения об образовательной организации</a></div>
+        </div>
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+        <script src="assets/js/main.js"></script>
+    </footer>
+</body>
+
+</html>

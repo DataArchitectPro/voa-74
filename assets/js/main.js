@@ -1,4 +1,36 @@
 (function () {
+    // Mobile burger menu
+    const header = document.querySelector('.header');
+    const burger = document.querySelector('[data-burger]');
+    const mobileNav = document.querySelector('[data-mobile-nav]');
+
+    if (header && burger && mobileNav) {
+        const closeMenu = () => {
+            header.classList.remove('is-open');
+            burger.setAttribute('aria-expanded', 'false');
+        };
+
+        burger.addEventListener('click', () => {
+            const isOpen = header.classList.toggle('is-open');
+            burger.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Close on link click
+        mobileNav.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => closeMenu());
+        });
+
+        // Close on Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
+
+        // Close when resizing to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 920) closeMenu();
+        });
+    }
+
     // Маска телефона (простая): +7 (___) ___-__-__
     const phone = document.querySelector('[data-phone]');
     if (phone) {

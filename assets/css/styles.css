@@ -326,3 +326,93 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Mobile header / burger ===== */
+.burger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .06);
+    color: var(--text);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.burger:focus {
+    outline: 2px solid rgba(78, 161, 255, .55);
+    outline-offset: 2px;
+}
+
+.burger__lines {
+    width: 18px;
+    height: 12px;
+    display: grid;
+    gap: 3px;
+}
+
+.burger__lines span {
+    display: block;
+    height: 2px;
+    border-radius: 999px;
+    background: rgba(233, 238, 252, .9);
+}
+
+/* Mobile nav panel */
+.mobile-nav {
+    display: none;
+    padding: 12px 0 16px;
+    border-top: 1px solid var(--line);
+}
+
+.mobile-nav__inner {
+    display: grid;
+    gap: 10px;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, .10);
+    background: rgba(255, 255, 255, .04);
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    text-decoration: none;
+}
+
+.mobile-nav .muted {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+@media (max-width: 920px) {
+    .header__row {
+        padding: 12px 0;
+    }
+
+    /* Hide desktop nav & ctas on mobile */
+    .nav {
+        display: none;
+    }
+
+    .header__cta {
+        display: none;
+    }
+
+    .burger {
+        display: inline-flex;
+    }
+
+    /* When opened */
+    .header.is-open .mobile-nav {
+        display: block;
+    }
+}
